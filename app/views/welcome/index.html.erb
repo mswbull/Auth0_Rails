@@ -1,0 +1,22 @@
+<% if @user %>
+  <h2>Hello <%= @user[:info][:name] %></h2>
+<% else %>
+  <script src="https://cdn.auth0.com/js/lock-8.2.min.js"></script>
+  <script type="text/javascript">
+    var lock = new Auth0Lock('<%= ENV['AUTH0_CLIENT_ID'] %>', '<%= ENV['AUTH0_DOMAIN'] %>');
+    function signin() {
+      lock.show({
+          callbackURL: '<%= ENV['AUTH0_CALLBACK_URL'] %>'
+        , responseType: 'code'
+        , authParams: {
+          scope: 'openid profile'
+        }
+      });
+    }
+  </script>
+  <h2>Hello World</h2>
+  <button onclick="window.signin();">Login</button>
+<% end %>
+<p>
+  The time is now: <%= Time.now %>
+</p>
