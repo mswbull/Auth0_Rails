@@ -1,10 +1,12 @@
-# Auth0 + Ruby on Rails
+# Auth0 + Rails Scaffolding
 
-**Application Name:** Auth0 + Ruby on Rails
+**Application Name:** Auth0 + Rails Scaffolding
 
 **Application Description:** Auth0 and Ruby on Rails Scaffolding.
 
 **Author:** Matthew Bull
+
+**Website:** www.lifeintech.com
 
 **Development Languages / Frameworks(s):** Ruby on Rails
 
