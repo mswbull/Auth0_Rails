@@ -12,7 +12,7 @@
 
 ---
 
-**Dependencies:**
+**Application Dependencies:**
 
 	activerecord-session_store
 	byebug
